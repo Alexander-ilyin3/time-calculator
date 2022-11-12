@@ -15,7 +15,11 @@ function App() {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
-          <TextField label="dva"></TextField>
+          <div className="flex">
+            <TextField label="dva"></TextField>
+            <TextField label="dva"></TextField>
+            <TextField label="dva"></TextField>
+          </div>
           <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Vidpovidno
           </a>
