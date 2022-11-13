@@ -19,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "convert-svg": "svgr --typescript -d ./src/components/Icon ./src/assets/icons",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/cli": "^6.5.1",
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/node-sass": "^4.11.3",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
