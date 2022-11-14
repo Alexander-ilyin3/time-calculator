@@ -1,0 +1,19 @@
+$primary-purple: #857aac;
+$primary-dustPink: #eea5a3;
+
+$gray-500: '#EFEFEF';
+$gray-600: '#CBCBCB';
+$gray-700: '#757575';
+$gray-800: '#5A5A5A';
+$gray-900: '#222222';
+
+:root {
+  --primary-purple: #{$primary-purple};
+  --primary-dustPink: #{$primary-dustPink};
+
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+}

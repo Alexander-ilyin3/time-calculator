@@ -1,0 +1,12 @@
+$boxShadowDefault: 0px 6px 24px rgba(0, 0, 0, 0.1);
+$borderRadiusRounded: 50%;
+$borderRadiusSquared-100: 8px;
+$borderRadiusSquared-200: 16px;
+
+:root {
+  --box-shadow-default: #{$boxShadowDefault};
+
+  --border-radius-rounded: #{$borderRadiusRounded};
+  --border-radius-squared-100: #{$borderRadiusSquared-100};
+  --border-radius-squared-200: #{$borderRadiusSquared-200};
+}

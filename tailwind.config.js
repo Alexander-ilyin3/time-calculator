@@ -9,17 +9,26 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          purple: '#857AAC',
-          dustPink: '#EEA5A3',
+          purple: 'var(--primary-purple)',
+          dustPink: 'var(--primary-dustPink)',
+          blue: 'var(--blue)',
         },
         gray: {
-          500: '#EFEFEF',
-          600: '#CBCBCB',
-          700: '#757575',
-          800: '#5A5A5A',
-          900: '#222222',
+          500: 'var(--gray-500)',
+          600: 'var(--gray-600)',
+          700: 'var(--gray-700)',
+          800: 'var(--gray-800)',
+          900: 'var(--gray-900)',
         },
       },
+    },
+    boxShadow: {
+      DEFAULT: 'var(--box-shadow-default)',
+    },
+    borderRadius: {
+      DEFAULT: 'var(--border-radius-rounded)',
+      100: 'var(--border-radius-squared-100)',
+      200: 'var(--border-radius-squared-200)',
     },
   },
   plugins: [],

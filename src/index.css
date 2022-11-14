@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('./scss/main.scss');
 
 body {
   margin: 0;
