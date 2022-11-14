@@ -1,0 +1,14 @@
+.TouchRippleOverridesBorderInherit {
+  :global {
+    .MuiTouchRipple-root{
+      border-radius: inherit !important;
+    }
+    // .MuiTouchRipple-rippleVisible {
+    //   border-radius: 50% !important;
+    //   background-color: green;
+    // }
+    // .MuiTouchRipple-rippleVisible .MuiTouchRipple-child {
+    //   background-color: red !important;
+    // }
+  }
+}

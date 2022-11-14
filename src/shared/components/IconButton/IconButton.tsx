@@ -4,6 +4,8 @@ import { Button } from '@mui/material';
 
 import { Paper } from '../Paper/Paper';
 
+import s from './IconButton.module.scss';
+
 type IconButtonVariant = 'rounded' | 'squared';
 
 type PropTypes = {
@@ -19,7 +21,11 @@ export const IconButton: React.FC<PropTypes> = ({ children, variant }) => {
 
   return (
     <Paper className={`w-[53px] h-[53px] shadow ${borderRaduisClass[variant]}`}>
-      <Button className="w-full h-full !p-0 !min-w-0">{children}</Button>
+      <Button
+        className={`w-full h-full !p-0 !min-w-0 !${borderRaduisClass[variant]} ${s.TouchRippleOverridesBorderInherit}`}
+      >
+        {children}
+      </Button>
     </Paper>
   );
 };
