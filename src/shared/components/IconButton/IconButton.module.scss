@@ -1,7 +1,7 @@
-.TouchRippleOverridesBorderInherit {
+.TouchRippleOverridesBorder50Percent {
   :global {
-    .MuiTouchRipple-root{
-      border-radius: inherit !important;
+    .MuiTouchRipple-root {
+      border-radius: 50% !important;
     }
     // .MuiTouchRipple-rippleVisible {
     //   border-radius: 50% !important;

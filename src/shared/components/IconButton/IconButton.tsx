@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React from 'react';
 
 import { Button } from '@mui/material';
@@ -22,7 +23,11 @@ export const IconButton: React.FC<PropTypes> = ({ children, variant }) => {
   return (
     <Paper className={`w-[53px] h-[53px] shadow ${borderRaduisClass[variant]}`}>
       <Button
-        className={`w-full h-full !p-0 !min-w-0 !${borderRaduisClass[variant]} ${s.TouchRippleOverridesBorderInherit}`}
+        className={clsx(
+          `w-full h-full !p-0 !min-w-0 ${borderRaduisClass[variant]}, ${
+            variant === 'rounded' && s.TouchRippleOverridesBorder50Percent
+          }`,
+        )}
       >
         {children}
       </Button>
