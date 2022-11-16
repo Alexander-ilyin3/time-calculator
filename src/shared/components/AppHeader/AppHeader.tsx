@@ -9,7 +9,7 @@ type PropTypes = {};
 
 export const AppHeader: React.FC<PropTypes> = () => {
   return (
-    <header className="flex m-4 justify-between">
+    <header className="flex mt-4 justify-between">
       <IconButton variant="squared">
         <MenuIcon />
       </IconButton>

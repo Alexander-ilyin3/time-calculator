@@ -21,6 +21,21 @@ module.exports = {
           900: 'var(--gray-900)',
         },
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h2: {
+              color: theme('colors.gray.900'),
+              fontSize: '24px',
+            },
+          },
+        },
+        test: {
+          css: {
+            color: theme('colors.red.900'),
+          },
+        },
+      }),
     },
     boxShadow: {
       DEFAULT: 'var(--box-shadow-default)',
@@ -31,5 +46,5 @@ module.exports = {
       200: 'var(--border-radius-squared-200)',
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

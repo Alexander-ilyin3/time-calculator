@@ -1,9 +1,8 @@
-import { ThemeProvider, CssBaseline, Input } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 
 import './App.css';
-import logo from './logo.svg';
+import { TimeManagerSection } from './components/time-manager-section/TimeManagerSection';
 import { AppHeader } from './shared/components/AppHeader/AppHeader';
-import { TextField } from './shared/components/Input/TextField';
 import theme from './theme';
 
 function App() {
@@ -11,10 +10,12 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-        <header>
-          <AppHeader />
-        </header>
-        <div className="App-header">
+        <main className="px-4">
+          <header>
+            <AppHeader />
+          </header>
+          <TimeManagerSection />
+          {/* <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
@@ -27,7 +28,8 @@ function App() {
           <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Vidpovidno
           </a>
-        </div>
+        </div> */}
+        </main>
       </div>
     </ThemeProvider>
   );
