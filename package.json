@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "convert-svg": "svgr --typescript -d ./src/components/Icon ./src/assets/icons",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-theme": "node bin/generate-tailwind-theme"
   },
   "eslintConfig": {
     "extends": [
