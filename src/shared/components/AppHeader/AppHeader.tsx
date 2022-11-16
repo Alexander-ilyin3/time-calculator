@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { BellIcon, MenuIcon, PersonIcon } from '../../../components/Icon';
 import { IconButton } from '../IconButton/IconButton';
+import { BellIcon, MenuIcon, PersonIcon } from '@components/Icon';
 
-// import styles from './AppHeader.module.scss';
-
-type PropTypes = {};
-
-export const AppHeader: React.FC<PropTypes> = () => {
+export const AppHeader: React.FC = () => {
   return (
     <header className="flex mt-4 justify-between">
       <IconButton variant="squared">

@@ -1,12 +1,8 @@
 import React from 'react';
 
-import { Paper } from '../../shared/components/Paper/Paper';
+import { Paper } from '@shared/components/Paper/Paper';
 
-// import styles from './TimeManagerSection.module.scss';
-
-type PropTypes = {};
-
-export const TimeManagerSection: React.FC<PropTypes> = () => {
+export const TimeManagerSection: React.FC = () => {
   return (
     <div className="prose flex flex-col items-start mt-6">
       <h2>Time calculation</h2>
