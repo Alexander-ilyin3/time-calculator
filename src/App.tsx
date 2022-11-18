@@ -1,7 +1,7 @@
 import { ThemeProvider, CssBaseline } from '@mui/material';
 
 import './App.css';
-import { TimeManagerSection } from './components/time-manager-section/TimeManagerSection';
+import { TimeManagerSection } from './features/time-manager-section/TimeManagerSection';
 import { AppHeader } from './shared/components/AppHeader/AppHeader';
 import theme from './theme';
 

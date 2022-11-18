@@ -1,0 +1,21 @@
+@import '/src/scss/colors.scss';
+
+.DrawerRoot {
+  position: relative;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 30px);
+    background-color: $primary-dustPink;
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: calc(50% + 30px);
+    background-color: $primary-dustPink;
+  }
+}
