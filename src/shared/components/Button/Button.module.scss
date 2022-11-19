@@ -1,0 +1,26 @@
+@import  'src/scss/colors.scss';
+@import 'src/scss/other.scss';
+//TODO: increace specificity by another way
+// ButtonRootPrimary
+.ButtonRootSecondary:not(article) {
+  height: 3rem;
+  
+  ::before {
+    content: "";
+    position: absolute;
+    inset: 0px 1px 1px;
+    border-radius: $borderRadiusSquared-100;
+    padding: 2px 2px;
+    background:linear-gradient(90deg,$primary-purple, $primary-dustPink); 
+    mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+  :global {
+    .MuiTouchRipple-root {
+      border-radius: $borderRadiusSquared-100;
+    }
+  }
+}
