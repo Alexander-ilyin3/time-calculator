@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 import { Paper } from '@shared/components/Paper/Paper';
 
-import { TimeSlotItemType } from './components/models';
 import { TimePickerModal } from './components/time-picker-modal/TimePickerModal';
 import { TimeSlotItem } from './components/time-slot-item/TimeSlotItem';
+import { TimeSlotItemType } from './models';
 
 export type TimeSlotEditingType = { item: TimeSlotItemType; slot: 'startTime' | 'endTime' };
 
@@ -16,7 +16,7 @@ export type SelectedSlotTypesMap = {
 };
 
 export const TimeManagerSection: React.FC = () => {
-  const [slotItems, setSlotItems] = useState<TimeSlotItemType[]>([{ id: 0, startTime: moment(), endTime: moment() }]);
+  const [slotItems, setSlotItems] = useState<TimeSlotItemType[]>([{ id: 0, startTime: null, endTime: null }]);
   const [timeSlotEditing, setTimeSlotEditing] = useState<TimeSlotEditingType>();
   const [isDrawerOpen, setDrawerOpen] = useState(true);
   const openTimePickerModal = (openStatus: boolean) => {
@@ -24,10 +24,10 @@ export const TimeManagerSection: React.FC = () => {
   };
 
   const changeInputData = (data: SelectedSlotTypesMap) => {
-    console.log('new data for input');
+    console.log('new data for input', data);
     setSlotItems((slots) => {
       const editingSlot = slots.find((slot) => slot === timeSlotEditing?.item);
-      const hour = data.ampm === 'pm' ? data.hours + 12 : data.hours;
+      const hour = data.ampm === 'PM' ? data.hours + 12 : data.hours;
 
       if (editingSlot) {
         return [

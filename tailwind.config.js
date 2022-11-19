@@ -12,6 +12,7 @@ module.exports = {
           purple: 'var(--primary-purple)',
           dustPink: 'var(--primary-dustPink)',
           blue: 'var(--blue)',
+          gradient: 'var(--linear-primary-gradient)',
         },
         gray: {
           500: 'var(--gray-500)',
@@ -24,6 +25,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            maxWidth: 'unset',
             h2: {
               color: theme('colors.gray.900'),
               fontSize: '24px',
@@ -44,6 +46,9 @@ module.exports = {
       DEFAULT: 'var(--border-radius-rounded)',
       100: 'var(--border-radius-squared-100)',
       200: 'var(--border-radius-squared-200)',
+    },
+    borderColor: {
+      primaryGradient: 'var(--linear-primary-gradient)',
     },
   },
   plugins: [require('@tailwindcss/typography')],

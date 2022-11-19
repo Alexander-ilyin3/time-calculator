@@ -2,8 +2,17 @@ import React from 'react';
 
 import { TextField as MuiTextField, TextFieldProps } from '@mui/material';
 
+import s from './TextField.module.scss';
+
 type PropTypes = TextFieldProps;
 
 export const TextField: React.FC<PropTypes> = (props: PropTypes) => {
-  return <MuiTextField variant="outlined" className={`bg-primary-purple`} {...props}></MuiTextField>;
+  return (
+    <MuiTextField
+      variant="outlined"
+      className={s.Root}
+      inputProps={{ className: s.InputRoot }}
+      {...props}
+    ></MuiTextField>
+  );
 };
