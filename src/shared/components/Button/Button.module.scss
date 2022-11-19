@@ -1,6 +1,6 @@
 @import  'src/scss/colors.scss';
 @import 'src/scss/other.scss';
-//TODO: increace specificity by another way
+//TODO: [TM-1] increace specificity by another way
 // ButtonRootPrimary
 .ButtonRootSecondary:not(article) {
   height: 3rem;

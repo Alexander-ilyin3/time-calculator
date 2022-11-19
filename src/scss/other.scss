@@ -4,10 +4,14 @@ $borderRadiusRounded: 50%;
 $borderRadiusSquared-100: 8px;
 $borderRadiusSquared-200: 16px;
 
+$screen-sm: 512px;
+
 :root {
   --box-shadow-default: #{$boxShadowDefault};
 
   --border-radius-rounded: #{$borderRadiusRounded};
   --border-radius-squared-100: #{$borderRadiusSquared-100};
   --border-radius-squared-200: #{$borderRadiusSquared-200};
+
+  --screen-sm: #{$screen-sm};
 }

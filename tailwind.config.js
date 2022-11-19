@@ -38,6 +38,9 @@ module.exports = {
           },
         },
       }),
+      screens: {
+        sm: 'var(--screen-sm)',
+      },
     },
     boxShadow: {
       DEFAULT: 'var(--box-shadow-default)',

@@ -9,7 +9,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className="App max-w-lg m-0 mx-auto">
+      <div className="App">
         <main className="px-4">
           <header>
             <AppHeader />
