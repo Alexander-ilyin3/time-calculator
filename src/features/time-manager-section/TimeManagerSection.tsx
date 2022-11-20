@@ -18,7 +18,7 @@ export type SelectedSlotTypesMap = {
 export const TimeManagerSection: React.FC = () => {
   const [slotItems, setSlotItems] = useState<TimeSlotItemType[]>([{ id: 0, startTime: null, endTime: null }]);
   const [timeSlotEditing, setTimeSlotEditing] = useState<TimeSlotEditingType>();
-  const [isDrawerOpen, setDrawerOpen] = useState(true);
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
   const openTimePickerModal = (openStatus: boolean) => {
     setDrawerOpen((_) => openStatus);
   };

@@ -4,6 +4,8 @@
 // ButtonRootPrimary
 .ButtonRootSecondary:not(article) {
   height: 3rem;
+  color: $gray-800;
+  font-weight: 500;
   
   ::before {
     content: "";

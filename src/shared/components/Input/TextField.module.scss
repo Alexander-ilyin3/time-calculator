@@ -1,19 +1,27 @@
-@import  'src/scss/colors.scss';
+@import 'src/scss/colors.scss';
 @import 'src/scss/other.scss';
+
+//TODO: [TM-1] increace specificity by another way
+.Rootttt {
+  border-color: $primary-purple !important;
+  border-width: 3px !important  ;
+  border-radius: $borderRadiusSquared-100 !important;
+}
 
 .Root {
   label {
-    color: $gray-900 !important;
+    color: $gray-800 !important;
+  }
+  &.WithValue {
+    label {
+      color: $primary-dustPink !important;
+    }
   }
 }
 
 .InputRoot {
-  // TODO: last been here
-  // border-radius: $borderRadiusSquared-200 !important;
-  // background-color: aqua;
   &:disabled {
-    // background-color: red;
     -webkit-text-fill-color: unset !important;
-    color: $gray-900;
+    color: $gray-800;
   }
 }
