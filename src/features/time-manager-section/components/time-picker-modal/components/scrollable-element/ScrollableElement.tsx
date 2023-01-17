@@ -16,7 +16,7 @@ export const ScrollableElement: <T>(props: PropTypes<T>) => React.ReactElement =
     <>
       {elements.map((num, i) => {
         return (
-          <div key={i} onClick={scrollToElementCenter} className="h-20 flex justify-center items-center snap-center">
+          <div key={i} onClick={scrollToElementCenter} className="h-20 flex justify-center items-center">
             <span>{num}</span>
           </div>
         );

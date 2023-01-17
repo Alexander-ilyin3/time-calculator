@@ -35,6 +35,12 @@ export const TimePickerModal: React.FC<PropTypes> = ({ open, setDrawerOpen, draw
     ampm: selectedAmpmValue,
   };
 
+  type Mode = 'INPUT' | 'OUTPUT';
+
+  const pinMode = (num: number, mode: Mode) => {};
+
+  pinMode(2, 'OUTPUT');
+
   return (
     <Drawer
       PaperProps={{ ref: ref }}
