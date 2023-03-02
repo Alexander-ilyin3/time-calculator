@@ -1,4 +1,3 @@
-import moment from 'moment';
 import React from 'react';
 
 import { TextField } from '@shared/components/Input/TextField';
@@ -19,6 +18,19 @@ export const TimeSlotItem: React.FC<PropTypes> = ({ item, openTimePickerModal, s
     <div className="flex flex-col gap-4">
       <div className="flex gap-4">
         <TextField
+          id="time"
+          label="Alarm clock"
+          type="time"
+          // defaultValue="07:30"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          inputProps={{
+            step: 300, // 5 min
+          }}
+          sx={{ width: 150 }}
+        />
+        {/* <TextField
           label="Start Time"
           disabled
           value={item.startTime ? moment(item.startTime).format('hh:mm A') : ''}
@@ -35,7 +47,7 @@ export const TimeSlotItem: React.FC<PropTypes> = ({ item, openTimePickerModal, s
             setTimeSlotEditing({ item, slot: 'endTime' });
             openTimePickerModal(true);
           }}
-        ></TextField>
+        ></TextField> */}
       </div>
       <TimeslotDeleteButton>Delete</TimeslotDeleteButton>
     </div>
